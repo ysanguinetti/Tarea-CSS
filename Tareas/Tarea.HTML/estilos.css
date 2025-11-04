@@ -56,6 +56,20 @@ nav ul {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #fff;
+z-index: 1000;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+padding-top: 100px;
+}
+
 nav ul li {
   display: inline;
 }
@@ -253,4 +267,26 @@ margin-top: 20px;
   max-width: 600px;
   margin: auto;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
+}
+
+.receta {
+  background-color: #fff7f5;
+  margin: 30px auto;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  text-align: left;
+}
+
+.receta h2 {
+  color: #e67b7b;
+  margin-top: 20px;
+  border-bottom: 2px solid #ffc5c5;
+  padding-bottom: 5px;
+}
+
+.receta ul, .receta ol {
+  margin: 10px 0 0 20px;
+  line-height: 1.8;
 }
