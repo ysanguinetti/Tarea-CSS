@@ -23,19 +23,56 @@
     </ul>
   </nav>
 
-  <section class="receta">
+  
+  <div class="receta-contenedor">
+    <div>
   <h2>Ingredientes</h2>
-  <ul>
-    <li>1 taza de harina de almendras</li>
-    <li>1/2 taza de leche</li>
-    <li>1 huevo grande</li>
-    <li>1/2 cucharadita de canela molida</li>
-    <li>1 cucharada de azúcar morena envasada</li>
-    <li>1 cucharada de mantequilla sin sal</li>
-    <li>2 plátanos, en rodajas</li>
-    <li>4 cucharadas de Leche Condensada Azucarada</li>
-    <li>8 fresas, cortadas por la mitad</li>
+
+  <ul class="lista-ingredientes">
+    <li>
+      <input type="checkbox">
+      <span>1 taza de harina de almendras</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>1/2 taza de leche</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>1 huevo grande</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>1/2 cucharadita de canela molida</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>1 cucharada de azúcar morena envasada</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>1 cucharada de mantequilla sin sal</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>2 plátanos, en rodajas</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>4 cucharadas de Leche Condensada Azucarada</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>8 fresas, cortadas por la mitad</span>
+    </li>
   </ul>
+</div>
+
+<div class="acciones-receta">
+  <span id="btn-guardar">❤️ Guardar</span>
+  <span>🖨️ Imprimir</span>
+  <span>🔗 Compartir</span>
+</div>
 
   <h2>Preparación paso a paso</h2>
   <ol>
@@ -44,5 +81,22 @@
     <li>Sirve los panqueques cubiertos con plátano, fresas y Leche Condensada Azucarada.</li>
   </ol>
 </section>
+
+<div id="modal-login" class="modal oculto">
+  <div class="modal-contenido">
+    <h3>Iniciá sesión</h3>
+    <p>Para guardar tus recetas favoritas y recibir novedades.</p>
+
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Contraseña">
+
+    <button>Iniciar sesión</button>
+    <button id="cerrar-modal">Cerrar</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
 
 
