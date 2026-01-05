@@ -33,3 +33,45 @@ btnGuardar.addEventListener("click", () => {
 cerrarModal.addEventListener("click", () => {
   modal.classList.add("oculto");
 });
+
+/*BOTON IMPRIMIR*/
+//===================
+const btnImprimir = document.getElementById("btn-imprimir");
+const modalImprimir = document.getElementById("modal-imprimir");
+
+btnImprimir.addEventListener("click", () => {
+  modalImprimir.classList.remove("oculto");
+
+  setTimeout(() => {
+    modalImprimir.classList.add("oculto");
+  }, 1500);
+});
+
+/*BOTON COMPARTIR*/
+//===========================
+const btnCompartir = document.getElementById("btn-compartir");
+const modalCompartir = document.getElementById("modal-compartir");
+const cerrarCompartir = document.getElementById("cerrar-compartir");
+const copiarLink = document.getElementById("copiar-link");
+const compartirWp = document.getElementById("compartir-wp");
+
+// Abrir modal
+btnCompartir.addEventListener("click", () => {
+  modalCompartir.classList.remove("oculto");
+});
+
+// Cierre de modal
+cerrarCompartir.addEventListener("click", () => {
+  modalCompartir.classList.add("oculto");
+});
+
+// Copiar link 
+copiarLink.addEventListener("click", () => {
+  navigator.clipboard.writeText(window.location.href);
+  alert("📋 Enlace copiado al portapapeles");
+});
+
+// WhatsApp ..
+compartirWp.addEventListener("click", () => {
+  alert("📱 Compartiendo por WhatsApp...");
+});

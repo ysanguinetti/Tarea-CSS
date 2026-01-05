@@ -23,17 +23,42 @@
     </ul>
   </nav>
 
-  <section class="receta">
+  <div class="card-receta">
   <h2>Ingredientes</h2>
-  <ul>
-    <li>140 g boniato asado</li>
-    <li>120 g harina de almendras</li>
-    <li>50 g copos de avena finos, sin gluten</li>
-    <li>1 cucharada semillas de amapola</li>
-    <li>2 cucharadas caramelo de dátil</li>
-    <li>20 ml aceite de oliva virgen extra</li>
-    <li>1 cucharadita canela en polvo</li>
-    <li>¼ cucharadita vainilla de Bourbon en polvo</li>
+
+  <ul class="lista-ingredientes">
+    <li>
+      <input type="checkbox">
+      <span>140 g boniato asado</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>120 g harina de almendras</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>50 g copos de avena finos, sin gluten</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>1 cucharada semillas de amapola</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>2 cucharadas caramelo de dátil</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>20 ml aceite de oliva virgen extra</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>1 cucharadita canela en polvo</span>
+    </li>
+    <li>
+      <input type="checkbox">
+      <span>¼ cucharadita vainilla de Bourbon en polvo</span>
+    </li>
   </ul>
 
   <h2>Preparación paso a paso</h2>
@@ -46,3 +71,43 @@
     <li>Dejar enfriar en una rejilla para pastelería.</li>       
   </ol>
 </section>
+
+<div class="acciones-receta">
+  <span id="btn-guardar">❤️ Guardar</span>
+  <span id="btn-imprimir">🖨️ Imprimir</span>
+  <span id="btn-compartir">🔗 Compartir</span>
+</div>
+
+<div id="modal-login" class="modal oculto">
+  <div class="modal-contenido">
+    <h3>Iniciá sesión</h3>
+    <p>Para guardar tus recetas favoritas y recibir novedades.</p>
+
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Contraseña">
+
+    <button>Iniciar sesión</button>
+    <button id="cerrar-modal">Cerrar</button>
+  </div>
+</div>
+
+<div id="modal-imprimir" class="modal oculto">
+  <div class="modal-contenido">
+    <p style="font-size: 1.1rem;">🖨️ Preparando versión imprimible…</p>
+  </div>
+</div>
+
+<div id="modal-compartir" class="modal oculto">
+  <div class="modal-contenido">
+    <h3>Compartir receta</h3>
+
+    <button id="copiar-link">📋 Copiar enlace</button>
+    <button id="compartir-wp">📱 WhatsApp</button>
+
+    <button id="cerrar-compartir">Cerrar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -23,9 +23,7 @@
     </ul>
   </nav>
 
-  
-  <div class="receta-contenedor">
-    <div>
+  <div class="card-receta">
   <h2>Ingredientes</h2>
 
   <ul class="lista-ingredientes">
@@ -66,21 +64,20 @@
       <span>8 fresas, cortadas por la mitad</span>
     </li>
   </ul>
-</div>
-
-<div class="acciones-receta">
-  <span id="btn-guardar">❤️ Guardar</span>
-  <span>🖨️ Imprimir</span>
-  <span>🔗 Compartir</span>
-</div>
-
-  <h2>Preparación paso a paso</h2>
+<h2>Preparación paso a paso</h2>
   <ol>
     <li>Coloca la harina de almendras, la leche, el huevo, la canela y el azúcar morena en una licuadora y tapa. Licúa hasta que no queden grumos.</li>
     <li>Coloca un poco de mantequilla en una sartén caliente. Una vez derretida, agrega la masa para cada panqueque. Cocina 3 minutos por lado o hasta que estén completamente dorados.</li>
     <li>Sirve los panqueques cubiertos con plátano, fresas y Leche Condensada Azucarada.</li>
   </ol>
 </section>
+</div>
+
+<div class="acciones-receta">
+  <span id="btn-guardar">❤️ Guardar</span>
+  <span id="btn-imprimir">🖨️ Imprimir</span>
+  <span id="btn-compartir">🔗 Compartir</span>
+</div>
 
 <div id="modal-login" class="modal oculto">
   <div class="modal-contenido">
@@ -94,6 +91,24 @@
     <button id="cerrar-modal">Cerrar</button>
   </div>
 </div>
+
+<div id="modal-imprimir" class="modal oculto">
+  <div class="modal-contenido">
+    <p style="font-size: 1.1rem;">🖨️ Preparando versión imprimible…</p>
+  </div>
+</div>
+
+<div id="modal-compartir" class="modal oculto">
+  <div class="modal-contenido">
+    <h3>Compartir receta</h3>
+
+    <button id="copiar-link">📋 Copiar enlace</button>
+    <button id="compartir-wp">📱 WhatsApp</button>
+
+    <button id="cerrar-compartir">Cerrar</button>
+  </div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>

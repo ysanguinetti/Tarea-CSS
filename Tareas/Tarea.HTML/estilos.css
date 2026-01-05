@@ -269,6 +269,8 @@ margin-top: 20px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
 }
 
+/*RECETA PANQUEQUES*/
+
 .receta {
   background-color: #fff7f5;
   margin: 30px auto;
@@ -431,3 +433,39 @@ margin-top: 20px;
   padding: 6px;
 }
 
+/* TÍTULO INGREDIENTES – RECETA PANQUEQUES */
+
+.card-receta {
+  max-width: 650px;
+  margin: 40px auto;
+  background-color: #fff7f3;
+  padding: 30px 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-receta h2 {
+  color: #e67b7b;
+  border-bottom: 2px solid #ffc5c5;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*BOTON IMPRIMIR*/ 
+
+#modal-imprimir .modal-contenido {
+  font-weight: bold;
+  animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
